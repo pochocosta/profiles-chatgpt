@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 4px 8px;
+    background-color: black;
+  }
+  button {
+    height: 36px;
+    width: 100%;
+    margin: 4px 0;
+    border: solid 1px #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+
+  a {
+    color: #fff;                /* Color de fuente blanco */
+    text-decoration: none;      /* Remueve el subrayado */
+}
+
+a:visited {
+    color: #fff;                /* Mantiene el color blanco incluso después de visitar el enlace */
+}
+
+/* Puedes agregar este estilo si deseas que se muestre algún efecto al pasar el cursor sobre el enlace */
+a:hover {
+    opacity: 0.8;               /* Ligeramente transparente al pasar el cursor */
+}
+  
+  .container {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.profile-card, .podcast-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-card img, .podcast-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.profile-info, .podcast-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name, .podcast-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-username, .podcast-subtitle {
+    color: #888;
+    font-size: 12px;
+}
+
+.podcast-card {
+    background-color: #222;
+    color: #fff;
+}
+
+.podcast-card img {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Perfiles para ChatGPT",
+    "description": "Gestión de perfiles para instrucciones personalizadas",
+    "version": "1.1",
+    "icons": {
+      "128": "icon_128.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+      },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://chat.openai.com/*"],
+          "js": ["contentScript.js"],
+          "css": ["styles.css"]
+        }
+      ]
+  }

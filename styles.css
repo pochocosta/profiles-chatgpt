@@ -1,0 +1,23 @@
+#profileDropdown {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#profileNameInput {
+    border: 2px solid #007BFF;   /* Borde de 2 píxeles con un color azul */
+    padding: 8px 10px;          /* Relleno interno para darle más espacio */
+    border-radius: 4px;         /* Esquinas redondeadas */
+    font-size: 1rem;            /* Tamaño de letra */
+    transition: border-color 0.3s; /* Transición suave cuando cambie el color del borde */
+
+    /* Estilo cuando el usuario coloca el cursor en el input */
+    &:focus {
+        border-color: #0056b3;  /* Un azul un poco más oscuro */
+        outline: none;          /* Remueve el contorno por defecto */
+        box-shadow: 0 0 8px rgba(0,123,255,0.2); /* Un ligero sombreado alrededor del input */
+    }
+}
